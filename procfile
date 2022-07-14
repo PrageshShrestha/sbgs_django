@@ -1,1 +1,1 @@
-web: gunicorn sbgsdjango.wsgi:application 
+web: gunicorn sbgsdjango.wsgi

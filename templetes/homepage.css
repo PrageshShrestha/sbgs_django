@@ -217,6 +217,8 @@ i{
 }
 .contact_page i{
     color:rgb(26, 26, 151);
+   font-size:200px;
+
 
 }
 
@@ -247,7 +249,7 @@ a:active{
 }
 .container{
     width:auto;
-    margin-left:10%;
+    margin-left:2%;
     background-color: rgb(13, 16, 49);
     letter-spacing: 1px;
     word-spacing: 2px;
@@ -273,7 +275,7 @@ a:active{
   .link_pages i{
     display:none;
   }
-@media only screen and (max-width:800px){
+@media only screen and (max-width:500px){
     #mainbody{
         width:100%;
        
@@ -299,7 +301,7 @@ a:active{
         height:50px;
     } 
      .refrigerator{
-        width:100px;
+        
         height:50px;
         overflow-x:hidden;
         margin-left:15px;
@@ -311,7 +313,7 @@ a:active{
     } 
     
     .link_pages{
-        width:200px;
+        width:300px;
         height:50px;
         margin-left:5px;
         margin-top:5px;
@@ -325,7 +327,7 @@ a:active{
 
     }
     .refrigerator:hover ,.refrigerator:active{
-        width:200px;
+        width:300px;
         height:300px;
         overflow:hidden;
         z-index:3;
@@ -345,31 +347,33 @@ a:active{
         height:800px;
     }
     #contacts{
-        height:620px;
-        padding-bottom:20px;
+        height:auto;
+        padding-bottom:40px;
     }
     .info{
         width: 0%;
     }
     .second_for_first{
-        width:800px;
-    }
-    .second_for_first img{
-        height:700px;
         width:100%;
+    }
+    
+    .second_for_first img{
+        height:800px;
+        left:-400px;
+        width:375px;
+
         opacity:0.6;
         
         
     }
     .second_for_first p{
-        top:100px;
+        top:135px;
         position:absolute;
         z-index:2;
         color:white;
         width:180px;
         height:auto;
         padding-top:0px;
-        background-color:rgba(0, 0, 0, 0.56);
         margin-left:10px;
     }
     .other_img{
@@ -378,10 +382,11 @@ a:active{
     }
     .highlights{
         position:absolute;
-        top:270px;
-        left:-36px;
+        top:300px;
+        left:-150px;
         margin-left:0%;
-        background:rgba(0,0,0,0.8);
+        
+        max-width:275px;
         font-size:200%;
         font-family:serif;
         padding:10px;
@@ -395,47 +400,64 @@ a:active{
     }
     #features{
         margin-top:40px;
+        width:100%;
+
     }
     
     .templetes{
         height:auto;
+        width:375px;
     }
 
 
 
 
         .midguard{
-            margin-left:340px;
+            margin-left:40px;
             display:none;
         }
         .main_contact1{
             margin-left:10px;
+            display:inline-block;
+            height:30px;
         }
         .contact_page{
-            margin-left:40px;
+            margin-left:4px;
+            height:80px;
+            width:200px;
             padding-left:10px;
             width:200px;
+            display:inline-flex;
             
         }
         .contact_page i{
             color:rgb(35, 35, 96);
             margin-left:0%;
-            width:154px;
+            font-size:40px;
             
           }
           .info_new_class{
-            top:1980px;
+            top:1730px;
             left:10px;
+            width:300px;
+            overflow-x:hidden;
             
             
           }
+          .info_new_class img{
+            width:300px;
+
+            height:300px;
+          }
           body{
-            width:800px;
+            width:300px;
+           
+            overflow-x:hidden;
             
           }
           #footer{
-            top:2580px;
-            width:600px;
+            top:2180px;
+            width:300px;
           }
         .link_pages i{
             display:block;

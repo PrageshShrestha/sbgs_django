@@ -1,0 +1,137 @@
+
+    
+    
+ {% include "head.html" %}
+{% load static %}
+ 
+<title>{{English.title}} </title>
+
+
+
+<body>
+   
+    <style>
+        {% include 'homepage.css' %}
+        
+    </style>
+
+<div id="mainbody">
+    {% include 'navbar1.html' %}
+
+        
+    <div class='info_new_class'>
+       <a href="https://www.google.com/maps/contrib/111012702169550478451/photos/@27.0531063,85.6306453,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1"> <img src="{% static 'media/location.PNG' %}" alt='no images found'></a>
+       <br>
+       <b>{{English.find}}</b>
+       <p>{{English.direction}}</p>
+       <p>{{English.hello}}</p>
+       <a href='https://lalbandimun.gov.np/en' class="address">{{English.exact_city}}</a>  <br>
+       
+       <!-- <a href='#'><b>Questions? Chat with us (Click here)</b></a> -->
+       
+      
+        
+
+    </div>
+    <div class="second_para">
+       
+        
+        <div id="home" class="templetes">
+
+            <div class="midguard">{{English.Found}}<p class="info_page">{{English.found_name}}</p>
+            </div>
+            <div class="second_for_first"><img src="{% static 'media/Picture/image4.jpg' %}" alt="no image found">
+                <p>{{English.topic_sentence}}</p>
+                    <div class='highlights'>{{English.highlight}}</div>
+                
+            </div>
+            <div class="img_com">
+
+                <p>{{English.More_pics}}-></p>
+                <div class="other_img">
+                    <img src="{% static 'media/Picture/image2.jpg' %}" alt="">
+                    <img src="{% static 'media/Picture/image5.jpg' %}" alt="">
+
+                    <img src="{% static 'media/Picture/image11.jpg' %}" alt="">
+
+                    <img src="{% static 'media/Picture/image14.jpg' %}" alt="">
+                    <img src="{% static 'media/Picture/image3.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="templetes" id="features">
+            <!--<div class="second_heading">-->
+            <b>{{English.Features}}</b><br>
+            <p class="info_page">{{English.fe1}}<br>{{English.fe2}}</p>
+            <div class="container">{{English.Feature1}} <br>
+                <div class="secondtext">{{English.f1}}</div>
+            </div>
+            <a href='https://www.bing.com/ck/a?!&&p=e80309e7af63f153e6a2fa5e53ddedde2c9c0e7696617c13934eb9396fedd973JmltdHM9MTY1Nzg4MDUyMCZpZ3VpZD1hMzY1YWMxYy1mNWU2LTQ3ZWQtYjU5MS0yMGFiM2VhNmY3MmEmaW5zaWQ9NTEzNQ&ptn=3&fclid=f6549896-0427-11ed-a6e1-db8ce15f32d4&u=a1aHR0cHM6Ly93d3cuZGFyYXouY29tLm5wLw&ntb=1'>
+            <div class="container">{{English.Feature2}}<br>
+                <div class="secondtext">{{English.f2}}</div>
+            </div></a>
+            <div class="container">{{English.Feature3}} <br>
+                <div class="secondtext">{{English.f3}}</div>
+            </div>
+            <div class="container">{{English.Feature4}}<br>
+                <div class="secondtext">{{English.f4}}</div>
+            </div>
+            <div class="container">{{English.Feature5}} <br>
+                <div class="secondtext"> {{English.f5}}</div>
+            </div>
+            <!--</div>-->
+        </div>
+       
+
+        <div class="templetes" id="contacts">
+            <div class="main_contact">
+            <b>{{English.contacts}}</b>
+                <div class="main_contact1">
+                    <div class="contact_page">
+                    <div> <i class="fa-solid fa-mobile"></i></div>
+                       <div>
+                        <a href="tel:9844053689">{{English.number1}}</a><br>
+                        <a href="tel:9801606601">{{English.number2}}</a></div>
+                    </div>
+                     <div class="contact_page" id='mail'>
+                       <i class="fa-solid fa-at"></i><br>
+                        <a href="mailto:panchalalshrestha155@gmail">panchalalshrestha155<br>@gmail.com</a>
+                    </div>
+
+
+                </div>
+                <div class="main_contact1">
+                    <div class="contact_page">
+                        <i class="fa-brands fa-facebook-f"></i><br>
+                        <a href="https://www.facebook.com/groups/323502255544113">{{English.profile}}<br>at Facebook</a>
+                    </div>
+                    <div class="contact_page">
+                        <i class="fa-solid fa-user"></i><br>
+                        <a href="https://www.facebook.com/panchalal.shrestha.73">{{English.found_name}}</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+       
+
+    </div>
+</div>
+{% include 'footer.html'%}
+</div>
+
+
+</div>
+
+</body>
+
+
+</html>    
+
+   
+

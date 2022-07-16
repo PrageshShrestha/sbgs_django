@@ -37,6 +37,7 @@ body{
     width:1340px;
     height:750px;
     background: rgb(13, 16, 49);
+    display:inline-block;
 
     
 }
@@ -47,15 +48,24 @@ a:hover{
     width:1340px;
 
     position:fixed;
-    height:75px;
+    height:100px;
     color:white;
     z-index:5;
-    top:0;
+    
     display : inline-flex;
     background:rgb(13, 16, 49);
     
 
 
+}
+.last{
+    width:auto;
+    height:20px;
+    font-size:20;
+    position: fixed;
+    top:0px;
+    left:100px;
+    
 }
 .first_para button{
     outline:none;
@@ -70,11 +80,20 @@ a:hover{
 
 
 }
+#mail i{
+    font-size:160px;
+    margin-top:10px;
+}
+#mail a{
+    margin-left:-35px;
+   
+    
+}
 .link_pages{
     width:auto;
     
     transition:0.5s;
-    margin-top:30px;
+    margin-top:50px;
     margin-left:5%;
     display:inline-flex;
    
@@ -94,7 +113,7 @@ a:hover{
     height:78px;
     width:20%;
     margin-left:0.5%;
-    margin-top:0.5%;
+    margin-top:1%;
     margin-bottom:2%;
     overflow:hidden;
 }
@@ -111,7 +130,32 @@ a:hover{
    
     
 }
+.next{
+    width:20px;
+    height:20px;
+    position:absolute;
+    top:300px;
+    border-radius: 50%;
+    border-color:none;
+    padding:auto;
+    left:700px;
+    animation-name:square;
+    animation-duration: 0.8s;
+    background-color: yellow;
+    animation-iteration-count: infinite;
+    z-index:4;
+    padding-left:5px;
+    padding-bottom:3px;
+}
+@keyframes square{
+    from{
+        transform:scale(1);
 
+    }
+    to{
+        transform:scale(1.5);
+    }
+}
 
 .templetes{
     width: 100%;
@@ -119,7 +163,7 @@ a:hover{
     height:auto;
     margin-bottom: 15px;
     transition-duration: 1s;
-   border-bottom: 2px inset white;
+  
 
     
 }
@@ -165,6 +209,13 @@ a:hover{
     margin-left:5px;
     width:297px;
     height:245px;
+    transition: 0.5s;
+    
+}
+.other_img img:active{
+    transform: scale(3);
+    position:absolute;
+    transition: 0.5s;
     
 }
 
@@ -220,6 +271,9 @@ i{
    font-size:200px;
 
 
+}
+.first_para button{
+    margin-left:20px;
 }
 
 .contact_page a{
@@ -289,7 +343,7 @@ a:active{
      .first_para{
        position:fixed;
        width:100%;
-       height:50px;
+       height:70px;
        z-index:5;
        display:inline-flex;
        
@@ -360,7 +414,7 @@ a:active{
     .second_for_first img{
         height:800px;
         left:-400px;
-        width:375px;
+        width:100%;
 
         opacity:0.6;
         
@@ -425,6 +479,7 @@ a:active{
             margin-left:4px;
             height:80px;
             width:200px;
+
             padding-left:10px;
             width:200px;
             display:inline-flex;
@@ -437,7 +492,7 @@ a:active{
             
           }
           .info_new_class{
-            top:1730px;
+            top:1780px;
             left:10px;
             width:300px;
             overflow-x:hidden;
@@ -456,11 +511,29 @@ a:active{
             
           }
           #footer{
-            top:2180px;
+            top:2280px;
             width:300px;
           }
         .link_pages i{
             display:block;
+        }
+        #mail{
+            width:300px;
+        }
+        #mail i{
+            font-size:40px;
+        }
+        #mail a{
+            margin-left:5px;
+        }
+        .last{
+            top:50px;
+            left:-50px;
+        }
+        .next{
+            left:240px;
+            top:500px;
+            
         }
     }   
     

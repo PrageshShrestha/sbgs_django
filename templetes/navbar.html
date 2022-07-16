@@ -1,6 +1,12 @@
     
     {% load static%}
+<div class='hellowrodl'>
+
+
 <div class="first_para">
+
+<b class='last'><marquee>{{English.welcome}}</marquee></b>
+
     <!--<h1 class = 'logo'>SWET BHAIRAV GENERAL STORES </h1>-->
     <img src="{% static 'media/LOGO1.png' %}" alt="No pic found">
    
@@ -17,11 +23,16 @@
         <a class="link_pages" href="#contacts">
             {{English.Cont}} 
         </a><br>
-            {% comment %} <button class='link_pages' name='Language' value='Language'>
-                Nepali
-            </button> {% endcomment %}
+       <form action='/English' method='post'>{% csrf_token %}
+       <button class='link_pages'>
+       Language
+       </button>
+       </form>
+         
+       
          </div>
 
 
 
+</div>
 </div>

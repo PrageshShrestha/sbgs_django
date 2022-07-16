@@ -3,7 +3,7 @@
     
  {% include "head.html" %}
 {% load static %}
- 
+ {% csrf_token %}
 <title>{{English.title}} </title>
 
 
@@ -16,16 +16,22 @@
     </style>
 
 <div id="mainbody">
+{% comment %} <div class='info_log'>Welcome to Swet Bhairab General Stores</div> {% endcomment %}
     {% include 'navbar.html' %}
 
+         <a href='https://www.google.com/search?q=10+benefits+of+a+website&sxsrf=ALiCzsbDvp-xxqLNHs560rNjf6IjHp34WA%3A1657956481315&ei=gWjSYoPmEtmw4-EPx_egyAs&oq=benefits+of+having+website&gs_lcp=Cgdnd3Mtd2l6EAEYADIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwA0oECEEYAEoECEYYAFAAWABg1AloAXABeACAAQCIAQCSAQCYAQDIAQjAAQE&sclient=gws-wiz'>   <div class='next'>
         
+         S
+         
+        
+        </div></a>
     <div class='info_new_class'>
        <a href="https://www.google.com/maps/contrib/111012702169550478451/photos/@27.0531063,85.6306453,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1"> <img src="{% static 'media/location.PNG' %}" alt='no images found'></a>
        <br>
-       <b>Find us</b>
-       <p>Durga Mandir ko pachim patti</p>
-       <p>Approximately 300m from Main Road</p>
-       <a href='https://lalbandimun.gov.np/en' class="address">Lalbandi-7,Sarlahi</a>  <br>
+       <b>{{English.find}}</b>
+       <p>{{English.direction}}</p>
+       <p>{{English.hello}}</p>
+       <a href='https://lalbandimun.gov.np/en' class="address">{{English.exact_city}}</a>  <br>
        
        <!-- <a href='#'><b>Questions? Chat with us (Click here)</b></a> -->
        
@@ -41,9 +47,9 @@
             <div class="midguard">{{English.Found}}<p class="info_page">{{English.found_name}}</p>
             </div>
             <div class="second_for_first"><img src="{% static 'media/Picture/image4.jpg' %}" alt="no image found">
-                <p>{{English.topic_sentence}}
+                <p>{{English.topic_sentence}}</p>
                     <div class='highlights'>{{English.highlight}}</div>
-                </p>
+                
             </div>
             <div class="img_com">
 
@@ -56,6 +62,7 @@
 
                     <img src="{% static 'media/Picture/image14.jpg' %}" alt="">
                     <img src="{% static 'media/Picture/image3.jpg' %}" alt="">
+                    <img src="{% static 'media/Picture/imagea100.jpg' %}" alt=''>
                 </div>
             </div>
         </div>
@@ -87,7 +94,7 @@
 
         <div class="templetes" id="contacts">
             <div class="main_contact">
-            <b>Our Contacts</b>
+            <b>{{English.contacts}}</b>
                 <div class="main_contact1">
                     <div class="contact_page">
                     <div> <i class="fa-solid fa-mobile"></i></div>
@@ -95,6 +102,11 @@
                         <a href="tel:9844053689">{{English.number1}}</a><br>
                         <a href="tel:9801606601">{{English.number2}}</a></div>
                     </div>
+                      <div class="contact_page" id='mail'>
+                       <i class="fa-solid fa-at"></i><br>
+                        <a href="mailto:panchalalshrestha155@gmail">panchalalshrestha155<br>@gmail.com</a>
+                    </div>
+                  
 
 
                 </div>
@@ -103,11 +115,13 @@
                         <i class="fa-brands fa-facebook-f"></i><br>
                         <a href="https://www.facebook.com/groups/323502255544113">{{English.profile}}<br>at Facebook</a>
                     </div>
-                    <div class="contact_page">
+                     <div class="contact_page">
                         <i class="fa-solid fa-user"></i><br>
-                        <a href="">{{English.found_name}}</a>
+                        <a href="https://www.facebook.com/panchalal.shrestha.73">{{English.found_name}}</a>
                     </div>
+                   
                 </div>
+                
 
             </div>
 

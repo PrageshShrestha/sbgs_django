@@ -43,43 +43,57 @@ English = {
     'comments':'Comments',
     'submit':'Submit',
     'like':'like',
-    'reply':'reply' ,   
+    'reply':'reply' , 
+    'direction':'Durga mandir ko pachhim patti',
+    'hello':'Approximately 300m From Main Road',
+    'exact_city':'Lalbandi-7,Sarlahi',
+    'find':'Find us',
+    'creator':'Author:Pragesh Shrestha ',
+    'welcome':'Welcome to Swet Bhairab General Stores'
+    
+
     
 }
 Nepali = {
-    'title':'',
-    'home':'',
-    'Location':'',
-    'Befe':'',
-    'Cont':'',
-    'language':'',
-    'title':'',
-    'Found':'',
-    'found_name':'',
-    'topic sentence':'',
-    'highlight':'',
-    'More_pics':'',
-    'Features':'',
-    'Feature1':'',
-    'f1':'',
-    'Feature2':'',
-    'f2':'',
+    'welcome':'स्वेत भैरब जनरल स्टोर्समा स्वागत छ ।',
+    'title':'SBGS',
+    'home':'होम',
+    'Location':'अहिले को स्थान',
+    'Befe':'बिसेस्ता ',
+    'Cont':'सम्पर्क',
+    'language':'भाषा',
     
-    'Feature3': '',
-    'f3':'',
+    'Found':'पसले',
+    'found_name':'पंचलाल श्रेष्ठ ',
+    'topic_sentence':'केटा र पुरुस का लागि कपडा चैएय मा सम्झिने पर्ने  , स्वेत भैरव गेनेरल स्टोर्स ।  पाउनुहोस् कपडाहरु सजिलो र छिटो ',
+    'highlight':'हजुर झैँ फ़शिओन  तेही',
+    'More_pics':'अन्य फोटोहरु  ',
+    'Features':'विशेषताहरू',
+    'Feature1':'केटा र gents लुगा/कपडा हरु ',
+    'f1':'एकै स्थान मा ',
+    'Feature2':'online को मज्जा offline मा ',
+    'f2':'पारदर्शिता ',
     
-    'Feature4':'',
-    'f4':'',
-    'Feature5':'',
-    'f5':'',
-    'contacts':'Contact us at:',
-    'number1':9,
-    'number2':9,
-    'profile':'',
+    'Feature3': 'समयाकलिन ट्रेन्डहरु ',
+    'f3':'सहजै पौनासकिने ',
+    
+    'Feature4':'राम्रो लागौनुहोस  ',
+    'f4':' सस्तो मा ',
+    'Feature5':'Quality नै अहिले को style हो ',
+    
+    'contacts':'हाम्रा सम्पर्कहरु:',
+    'number1':'९८०१६०६६०१',
+    'number2':'९८४४०५३६८९',
+    'profile':'प्रोफाइल',
     'comments':'',
     'submit':'',
     'like':'',
     'reply':'' ,   
+    'direction':'दुर्गा मन्दिर को पचिम पट्टि ',
+    'hello':'मैन road भन्दा ३०० मीटर (hat बजार )',
+    'exact_city':'लालबन्दी -७ ,सर्लाही ',
+    'find':'हाम्रो ठेगाना',
+    'creator':'प्रगेश श्रेष्ठ ',
     
 }
 
@@ -125,7 +139,8 @@ Nepali = {
     # img_list = os.listdir(path + 'static/media/pictures')
     # context = {"images": img_list}
     # return render (request, '(path to django template)', context)    
-   
+def second_english(request):
+     return render(request , 'english.html' , {'English':English })   
 def hello(request):
     
    
@@ -159,9 +174,11 @@ def hello(request):
     # Visitors.Browser_version = browser_version
     # Visitors.OS_type = os_type
     # Visitors.os_version = os_version
-           
+    return render(request , 'homepage.html',{'English':Nepali})
+       
+
       
-    return render(request , 'homepage.html',{'English':English ,'comment':hello})    
+        
   
        
 # Create your views here.

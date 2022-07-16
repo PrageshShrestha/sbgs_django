@@ -218,7 +218,13 @@ a:hover{
     transition: 0.5s;
     
 }
-
+.number{
+    border-bottom:1px inset white;
+    margin-bottom:2px;
+}
+#contact1 a{
+    text-decoration:none;
+}
 .other_image{
     width:30%;
     height:100%;
